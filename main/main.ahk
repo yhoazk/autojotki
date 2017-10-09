@@ -5,11 +5,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Media controls
 ; press shift+ctrl+a to next
-+^a::
++!a::
 Send {Media_Next}
 return
 ; press shift+ctrl+s to pause
-+^s::
++!s::
 Send {Media_Play_Pause}
 return
 
@@ -17,10 +17,10 @@ return
 
 ; press shift+contorl+-> to increase volume
 
-+^Left::
+!+Left::
 Send {Volume_Down 5}
 return
-+^Right::
+!+Right::
 Send {Volume_Up}
 return
 
